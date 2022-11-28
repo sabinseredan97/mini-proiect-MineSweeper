@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#gameBoard {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+#gameBoard div {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 3px;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: grey;
+}
+
+.difficultyBtns {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .8);
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 3em;
+    flex-direction: column;
+}
+
+.difficultyBtns.show {
+    display: flex;
+}
+
+div.show {
+    background-color: white !important;
+}
+
+.gameOver {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 3em;
+    flex-direction: column;
+}
+
+.gameOver.show {
+    display: flex;
+}
+
+.easyDifficulty {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    background-color: green;
+}
+
+.mediumDifficulty {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    background-color: yellow;
+}
+
+.hardDifficulty {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    background-color: red;
+}
+
+#resetBtn {
+    font-size: 1rem;
+    padding: 1rem 2rem;
+}
