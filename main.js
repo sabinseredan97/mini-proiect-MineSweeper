@@ -147,7 +147,6 @@ function placeMines(nrOfMines) {
             currentElement = gameBoard.children[minePosition];
         } while (currentElement.value)
             currentElement.value = "m";
-            currentElement.textContent = "X";
             mines.push(currentElement);
     }
         minesNeighbours(mines);
